@@ -1,0 +1,20 @@
+Richards-MacBook-Pro:simple_cms richardbranson$ mysql -u root -p
+Enter password: 
+
+mysql> SHOW DATABASES;
+mysql> DROP DATABASE simple_cms_development;
+mysql> SHOW DATABASES;
+mysql> create database simple_cms_development;
+mysql> SHOW DATABASES;
+mysql> USE simple_cms_development
+MySQL server version for the right syntax to use near '*
+TO 'simple_cms'@'localhost'
+IDENTIFIED BY 'secretpassword'' at line 1
+mysql> GRANT ALL PRIVILEGES ON simple_cms_development.*
+    -> TO 'simple_cms'@'localhost'
+    -> IDENTIFIED BY 'VIRGIN0834';
+mysql> SHOW GRANTS FOR 'simple_cms'@'localhost';
+mysql> exit
+
+Richards-MacBook-Pro:simple_cms richardbranson$ mysql -u simple_cms -p simple_cms_development
+Enter password:
